@@ -2,15 +2,20 @@ $(document).ready(function(){
     rainMany();
 });
 setTimeout(function(){
-	$("#credit").hide();
+	$("#credit").css("opacity","0.1");
 },15000);
 var width = $(window).width();
 var height = $(window).height()+10;
 var times = 0;
 
 function enlarge(){
-	if ($("#youtubeIFrame").css("display") === "none") { $("#youtubeIFrame").css("display","block"); }
-	else $("#youtubeIFrame").css("display","none");
+	if ($("#youtubeIFrame").css("display") === "none") { 
+		$("#youtubeIFrame").css("display","block");
+		$("#credit").css("opacity","1");
+	}
+	else {
+		$("#youtubeIFrame").css("display","none");
+		$("#credit").css("opacity","0.1");}
 }
 
 function rainMany(){
