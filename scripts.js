@@ -1,7 +1,9 @@
 $(document).ready(function(){
     rainMany();
 });
-
+setTimeout(function(){
+	$("#credit").hide();
+},15000);
 var width = $(window).width();
 var height = $(window).height()+10;
 var times = 0;
