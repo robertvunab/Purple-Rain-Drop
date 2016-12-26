@@ -1,0 +1,46 @@
+* {
+	font-family: helvetica;
+}
+
+#display {
+	position: fixed;
+	width: 95%; margin: 0 auto;
+	height: 200px;
+	background-color: blue;
+}
+.drop {
+	background-color: purple; 
+	width: 3px; height: 30px; top: -200px;
+	position: fixed !important;
+}
+
+#showTitle {
+	position: absolute;
+	font-size: 100px;
+	text-shadow: 0px 0px 20px purple;
+	position: relative; margin: 0 auto; display: block;
+	color: purple; text-align: center;
+}
+
+#credit {
+	position: fixed;
+	display: inline-block; bottom: 10px; right: 10px;
+	color: purple;
+}
+
+#clickHere {
+	background-color: rgba(128,0,128,0.5); display: inline-block; color: white; padding: 4px; border-radius: 5px;
+	transition: padding 200ms, background-color 200ms;
+}
+#clickHere:hover {
+	background-color: rgba(128,0,128,1);
+}
+#clickHere:active {
+	background-color: rgba(228,228,228,1);
+}
+
+#youtubeIFrame {
+	display: none;
+	position: absolute; 
+	margin: 10px; bottom: 40px; right: 10px;
+}
